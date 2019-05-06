@@ -17,10 +17,12 @@ function objectWithId(obj) {
 /**
  * Given an object URL, fetch it, append the ID to it, and return it.
  */
-exports.getObjectFromUrl = async function getObjectFromUrl(url) {
+async function getObjectFromUrl(url) {
   const data = await localUrlLoader.load(url);
   return objectWithId(data);
 }
+
+exports.getObjectFromUrl = getObjectFromUrl;
 
 /**
  * Given a type and ID, get the object with the ID.
