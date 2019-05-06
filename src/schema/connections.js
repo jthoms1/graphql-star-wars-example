@@ -18,8 +18,6 @@ exports.connectionFromUrls = (
   prop,
   type,
 ) => {
-  console.log(name, prop, JSON.stringify(type, null, 2));
-
   const { connectionType } = connectionDefinitions({
     name,
     nodeType: type,
