@@ -1,0 +1,1 @@
+exports.getFromLocalUrl = require('./local').getFromLocalUrl;
